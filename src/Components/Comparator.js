@@ -110,7 +110,7 @@ class Comparator extends React.Component{
         try {
             const images = await axios({
                 method: 'post',
-                url: `http://13.59.89.50/v1/images`,
+                url: `https://backend.tecnologiacs.com/v1/images`,
                 data: formData,
                 config: { headers: {'Content-Type': 'multipart/form-data' }}
             })
@@ -135,7 +135,7 @@ class Comparator extends React.Component{
 
         await axios({
             method: 'patch',
-            url: `http://13.59.89.50/v1/images/${this.state.pk}/upload`,
+            url: `https://backend.tecnologiacs.com/v1/images/${this.state.pk}/upload`,
             data: data
         }).then(response => {
             console.log(response)
