@@ -24,7 +24,7 @@ function Home(){
         <ThemeProvider theme={theme} >
             <Container maxWidth={false} className={classes.ContainerBody}>
                 <Container maxWidth="md" className={classes.Container_main}>
-                    <Typography component="h2" variant="h2">¿Algún día nos vamos a graduar?</Typography>
+                    <Typography component="h2" variant="h2" align="center">Comparador de imágenes</Typography>
                 </Container>
                 <Container maxWidth="lg" className={classes.Container_main}>
                     <Comparator/>
